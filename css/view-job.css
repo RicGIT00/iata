@@ -80,7 +80,7 @@ textarea {
   justify-content: space-between;
 }
 
-.job-confirm {
+.job-edit {
   padding: 0px 28px;
   margin-top: 25px;
   border-radius: 5px;
@@ -93,7 +93,7 @@ textarea {
   cursor: pointer;
 }
 
-.job-confirm:hover {
+.job-edit:hover {
   border-color: #0D91FF; 
   background: #0084F4;
   color: #FFF; 
