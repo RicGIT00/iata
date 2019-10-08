@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Default Code -->
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <link href="{% static 'images/favicon.ico' %}" rel="icon"/>
+  <title>Sign Up Recruiter | IATA System</title>
+
+  <!-- Font Icon -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+        rel="stylesheet">
+
+  <!-- CSS Imports -->
+  <link href="{% static 'css/login-recruiter.css' %}" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="main">
+  <!-- Sign In -->
+  <section class="sign-in">
+    <div class="container slide-in-fwd-center">
+      <div class="signin-content">
+        <div class="signin-image">
+          <figure>
+            <img alt="Foto carrousel de login" src="{% static 'images/success.png' %}">
+            <img alt="Foto carrousel de login" src="{% static 'images/launch.png' %}">
+            <img alt="Foto carrousel de login" src="{% static 'images/success2.png' %}">
+            <img alt="Foto carrousel de login" src="{% static 'images/launch2.png' %}">
+          </figure>
+        </div>
+        <!-- *FORM CONTENT (Id/Password)* -->
+        <div class="signin-form">
+          <h2 class="form-title">Fazer Login</h2>
+          <form action="login" class="login-form" id="login-form" method="POST">
+            {% csrf_token %}
+            <div class="form-content">
+              <label for="your_id"><i class="zmdi zmdi-account"></i></label>
+              <input id="your_id" name="your_id" placeholder="Digite seu ID" type="text"/>
+            </div>
+            <div class="form-content">
+              <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+              <input id="your_pass" name="your_pass" placeholder="Digite sua senha" type="password"/>
+            </div>
+            <div class="form-content form-button">
+              <span class="error-message bounce-right" id="error-message"><i class="zmdi zmdi-alert-circle-o"></i>  ID e/ou senha incorreto(s)!</span>
+              <input class="form-submit" id="signin" type="submit" value="Entrar"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
