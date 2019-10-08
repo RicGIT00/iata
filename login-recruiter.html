@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <!-- Default Code -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Sign Up | IATA System</title>
+
+    <!-- Font Icon -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/login-recruiter.css" />
+
+  </head>
+  <body>
+    
+    <div class="main">
+      <section class="sign-in">
+        <div class="container slide-in-fwd-center">
+          <div class="signin-content">
+            <div class="signin-image">
+              <figure>
+                <img src="images/success.png" alt="Foto carrousel de login">
+                <img src="images/launch.png" alt="Foto carrousel de login">
+                <img src="images/success2.png" alt="Foto carrousel de login">
+                <img src="images/launch2.png" alt="Foto carrousel de login">              
+              </figure>
+            </div>
+            <!-- *FORM CONTENT (Id/Password)* -->
+            <div class="signin-form">
+              <h1 class="form-title">Fazer Login</h1>
+
+              <form action="POST" class="login-form" id="login-form">
+                  <div class="form-content">
+                    <label for="your_email"><i class="zmdi zmdi-account"></i></label>
+                    <input type="text" name="your_id" id="your_id" placeholder="Digite seu ID"/>
+                  </div>
+                  <div class="form-content">
+                    <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                    <input type="password" name="your_pass" id="your_pass" placeholder="Digite sua senha"/>
+                  </div>
+                  <div class="form-content form-button">
+                    <span class="error-message bounce-right" id="error-message"><i class="zmdi zmdi-alert-circle-o"></i>  ID e/ou senha incorreto(s)!</span>
+                    <input type="button" name="signin" id="signin" class="form-submit" value="Entrar"/>
+                  </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- JavaScript Imports -->
+    <script type="text/javascript" src="js/login-recruiter.js"></script>
+  </body>
+</html>
