@@ -1,7 +1,7 @@
-document.getElementById("card-button").addEventListener("click",function(){
-  location.href='view-job.html';
+document.getElementById("card-image").addEventListener("click",function(){
+  location.href='applicant-view.html';
 });
 
-document.getElementById("card").addEventListener("click",function(){
-  location.href='applicants-view.html';
+document.getElementById("card-button").addEventListener("click",function(){
+  location.href='view-job.html';
 });

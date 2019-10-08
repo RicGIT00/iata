@@ -146,6 +146,7 @@ figure {
   color: #74788D;
   background: transparent;
   transition: all 0.2s linear;
+  overflow: hidden;
 }
 
 .card-button:hover {
