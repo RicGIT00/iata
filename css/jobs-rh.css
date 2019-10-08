@@ -33,12 +33,15 @@ body {
   color: #48465b;
 }
 
+.jobs-buttons {
+  display: flex;
+}
+
 a {
   width: fit-content;
   text-decoration: none;
   padding: 0px 28px;
   border-radius: 5px;
-  border-bottom: none;
   background: #0084F4;
   transition: background-color 0.3s linear;
   line-height: 45px;
@@ -49,6 +52,24 @@ a {
 
 a:hover {
   background: #0D91FF; 
+}
+
+.exit-button {
+  padding: 0px 28px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #FF3958;
+  transition: background-color 0.3s linear;
+  line-height: 45px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  background: #FF647C;
 }
 
 .jobs-cards {
